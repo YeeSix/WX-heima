@@ -1,0 +1,61 @@
+/* view{ */
+/* 使用主题颜色 */
+/* color:var(--themeColor); */
+/* } */
+/**
+ * swiper标签存在默认的宽高 宽100% 高150px
+ * image标签也存在默认宽高 宽320px 高240px
+ * ---设计图片和轮播图 
+ *    1 先查看原图的宽高 750px 340px
+ *    2 让图片宽高自适应 宽100%----应用image的mode属性 设置为widthFit 即宽度固定 高度自动变化
+ *    3 最后让swiper标签的宽高与图片一致 750rpx 340rpx
+*/
+.index_swiper swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+.index_swiper swiper image {
+  width: 100%;
+}
+.index_cate {
+  display: flex;
+}
+.index_cate navigator {
+  padding: 30rpx;
+  flex: 1;
+}
+.index_cate navigator image {
+  width: 100%;
+}
+.index_floor .floor_group .floor_title {
+  padding: 10rpx 0;
+}
+.index_floor .floor_group .floor_title image {
+  width: 100%;
+}
+.index_floor .floor_group .floor_list {
+  box-sizing: content-box;
+  overflow: hidden;
+  border: 10rpx solid #fff;
+}
+.index_floor .floor_group .floor_list navigator {
+  float: left;
+  width: 33.33%;
+  height: 55.60191589vw;
+  /* 后四个超链接 */
+}
+.index_floor .floor_group .floor_list navigator:nth-last-child(-n+4) {
+  /* 第一张原图宽高为214*357 */
+  /* 214/357=33.33vw/height 则第一张高为height=33.33vw*357/214 */
+  /* 同时后四张为第一张高度的一半 */
+  height: 27.80095794vw;
+  border-left: 10rpx solid #fff;
+}
+.index_floor .floor_group .floor_list navigator:nth-child(2),
+.index_floor .floor_group .floor_list navigator:nth-child(3) {
+  border-bottom: 10rpx solid #fff;
+}
+.index_floor .floor_group .floor_list navigator image {
+  width: 100%;
+  height: 100%;
+}

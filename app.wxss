@@ -1,0 +1,19 @@
+@import "./styles/iconfont.wxss";
+
+/* 微信小程序不识别通配符*  */
+page,view,text,swiper,swiper-item,img,navigator{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+/* 主题颜色 less中存在变量 原生的css和wxss也是支持变量的*/
+page{
+  /* 定义主题颜色 */
+  --themeColor:#eb4450;
+  /* 定义统一字体大小 假设设计稿大小为375px 由1px=2rpx 则14px=28rpx */
+  font-size:28rpx;
+}
+image{
+  width:100%;
+}

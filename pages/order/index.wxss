@@ -1,0 +1,14 @@
+.order_main .order_item {
+  padding: 20rpx;
+  color: #666;
+  border-bottom: 1rpx solid #ccc;
+}
+.order_main .order_item .order_item_flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+}
+.order_main .order_item .order_price_row .order_price_value {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
